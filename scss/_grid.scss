@@ -1,0 +1,33 @@
+$grid:grid;
+
+@media only screen and (min-width: 769px){ 
+.gridContainer{
+	display: grid;
+	grid-template-areas: 
+	"logo nav nav nav nav"
+	"main main main main main"
+	"footer footer footer footer footer"
+	"redes redes redes redes redes";
+	grid-template-rows: 160px 1fr 50px 50px;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	.logo {
+		grid-area: logo;
+	}
+
+	.nav{
+		grid-area: nav;
+	}
+
+	.main {
+		grid-area: main;
+	}
+
+	footer{
+		grid-area: footer;
+	}
+
+	.redes{
+	grid-area: redes;
+	}
+}
+}

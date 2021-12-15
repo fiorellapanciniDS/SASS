@@ -1,3 +1,10 @@
+
+$styleFont: (
+	menu: 16px,
+	derechos: 14px,
+	);
+
+
 //nesting
 
 nav{
@@ -12,7 +19,7 @@ li {
 	a { 
 		color: $claro;
 		text-decoration: none;
-		font-size: 16px;
+		font-size: map-get($styleFont, menu);
 		position: relative;
 			&:hover {
 				color: $amarillo;

@@ -1,3 +1,4 @@
+
 //familia tipografica
 @font-face {
 	font-family: "nunito";
@@ -5,12 +6,18 @@
 
 /*fondo y fuente de toda la pagina*/ 
 body{
-	background-color: $negro; 
+	background-color: $negro;
 	font-family: "nunito";
-	color: $claro
+	color: $claro;
 }
 
-p{
-	margin: 20px;
-text-align: center
+@mixin estiloFuente($margin, $align, $fSize){
+	margin: $margin;
+	text-align: $align;
+	font-size: $fSize;
+
+}
+
+.main{
+	@include estiloFuente(20px, center, 20px);
 }

@@ -1,5 +1,32 @@
+
+$styleFont: (
+	menu: 16px,
+	derechos: 14px,
+	);
+
 footer{
 	color: #f2ebe2;
-	font-size: 16px;
+	font-size: map-get($styleFont, derechos);
 	text-align: center;
 	}
+
+
+.redes{
+	text-align: center;
+	border-radius: 20px;
+	border: 1px;
+	background-color: $claro;
+	color: $negro;
+}
+
+.redes-fb{
+	@extend .redes;
+	background-color: $gris;
+	color: white;
+}
+
+.redes-ins{
+	@extend .redes;
+	background-color: $amarillo;
+
+}
